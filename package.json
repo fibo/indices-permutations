@@ -1,7 +1,7 @@
 {
   "name": "indices-permutations",
   "description": "is a recursive reducer to all permutations with repetitions of multi dimensional array indices",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "http://npm.im/indices-permutations",
   "author": {
     "name": "Gianluca Casati",
