@@ -1,0 +1,34 @@
+{
+  "name": "indices-permutations",
+  "description": "is a recursive reducer to all permutations with repetitions of multi dimensional array indices",
+  "version": "0.0.0",
+  "homepage": "http://npm.im/indices-permutations",
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "standard": "standard *.js",
+    "tap": "node test.js | ./node_modules/tap-min/bin/tap-min",
+    "test": "npm run standard && npm run tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fibo/indices-permutations.git"
+  },
+  "keywords": [
+    "index",
+    "array",
+    "permutation"
+  ],
+  "bugs": {
+    "url": "https://github.com/fibo/indices-permutations/issues"
+  },
+  "devDependencies": {
+    "tap-min": "^1.0.0",
+    "tape": "^4.2.2"
+  }
+}
