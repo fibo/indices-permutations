@@ -11,9 +11,8 @@
   "main": "index.js",
   "scripts": {
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "standard": "standard *.js",
-    "tap": "node test.js | ./node_modules/tap-min/bin/tap-min",
-    "test": "npm run standard && npm run tap"
+    "lint": "standard",
+    "test": "tape test"
   },
   "repository": {
     "type": "git",
@@ -28,7 +27,6 @@
     "url": "https://github.com/fibo/indices-permutations/issues"
   },
   "devDependencies": {
-    "tap-min": "^1.0.0",
     "tape": "^4.2.2"
   }
 }
