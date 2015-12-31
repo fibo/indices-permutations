@@ -35,7 +35,7 @@ Reduce `[n]` to `[[0], [1], ..., [n-1]]`
 
 ### order 2
 
-Reduce `[m, n]` to `[[0, 0], [0, 1], ... ,[m-1, n-1]]'
+Reduce `[m, n]` to `[[0, 0], [0, 1], ... ,[m-1, n-1]]`
 
 ```
 [3, 3].reduce(indicesPermutations, []) // [[0, 0], [0, 1], [0, 2],
@@ -57,4 +57,3 @@ Reduce `[a1, a2, a3]` to `[[0, 0, 0], ... ,[a1 - 1, a2 - 1, a3 - 1]]`
 ## License
 
 [MIT](http://g14n.info/mit-license/)
-
