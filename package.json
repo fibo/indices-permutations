@@ -8,12 +8,18 @@
     "url": "http://g14n.info"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "indices-permutations.js",
   "scripts": {
-    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "check-deps": "npm outdated",
     "lint": "standard",
-    "test": "tape test"
+    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "test": "NODE_PATH=. tape test.js"
   },
+  "pre-commit": [
+    "lint",
+    "test",
+    "check-deps"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/fibo/indices-permutations.git"
@@ -27,6 +33,8 @@
     "url": "https://github.com/fibo/indices-permutations/issues"
   },
   "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "standard": "^9.0.2",
     "tape": "^4.2.2"
   }
 }

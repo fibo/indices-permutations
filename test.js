@@ -1,4 +1,4 @@
-var indicesPermutations = require('./index')
+var indicesPermutations = require('indices-permutations')
 var test = require('tape')
 
 test('order 1', function (t) {
