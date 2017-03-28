@@ -7,6 +7,8 @@
 [Examples](#examples) |
 [License](#license)
 
+[![NPM version](https://badge.fury.io/js/indices-permutations.svg)](http://badge.fury.io/js/indices-permutations) [![Build Status](https://travis-ci.org/fibo/indices-permutations.svg?branch=master)](https://travis-ci.org/fibo/indices-permutations?branch=master) [![Dependency Status](https://gemnasium.com/fibo/indices-permutations.svg)](https://gemnasium.com/fibo/indices-permutations)
+
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ## Install
