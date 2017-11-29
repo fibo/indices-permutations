@@ -11,7 +11,7 @@
   "main": "indices-permutations.js",
   "scripts": {
     "check-deps": "npm outdated",
-    "lint": "standard",
+    "lint": "standa",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "test": "NODE_PATH=. tape test.js"
   },
@@ -34,7 +34,9 @@
   },
   "devDependencies": {
     "pre-commit": "^1.2.2",
-    "standard": "^9.0.2",
     "tape": "^4.2.2"
+  },
+  "dependencies": {
+    "standa": "^1.1.0"
   }
 }
