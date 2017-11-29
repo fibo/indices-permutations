@@ -1,7 +1,7 @@
 {
   "name": "indices-permutations",
   "description": "is a recursive reducer to all permutations with repetitions of multi dimensional array indices",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "http://g14n.info/indices-permutations",
   "author": {
     "name": "Gianluca Casati",
