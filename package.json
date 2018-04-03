@@ -33,10 +33,10 @@
     "url": "https://github.com/fibo/indices-permutations/issues"
   },
   "devDependencies": {
+    "dot-editorconfig": "^1.1.0",
     "pre-commit": "^1.2.2",
-    "tape": "^4.2.2"
+    "standa": "^2.0.1",
+    "tape": "^4.9.0"
   },
-  "dependencies": {
-    "standa": "^1.1.0"
-  }
+  "dependencies": {}
 }
