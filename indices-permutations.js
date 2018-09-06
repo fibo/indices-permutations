@@ -1,22 +1,18 @@
-function indicesPermutations (previousValue, currentValue, currentIndex, array) {
-  var arrayLength = array.length
-  var result = []
+function indicesPermutations (accumulator, currentValue, index, array) {
+  const arrayLength = array.length
+  const result = []
 
   if (arrayLength === 1) {
-    for (var i = 0; i < currentValue; i++) {
+    for (let i = 0; i < currentValue; i++) {
       result.push([i])
     }
   } else {
-    var arrayWithoutLastElement = []
+    const arrayWithoutLastElement = array.slice(0, arrayLength - 1)
 
-    for (var j = 0; j < arrayLength - 1; j++) {
-      arrayWithoutLastElement.push(array[j])
-    }
+    const previousIteration = arrayWithoutLastElement.reduce(indicesPermutations, [])
 
-    var previousIteration = arrayWithoutLastElement.reduce(indicesPermutations, [])
-
-    for (var l = 0; l < previousIteration.length; l++) {
-      for (var k = 0; k < currentValue; k++) {
+    for (let l = 0; l < previousIteration.length; l++) {
+      for (let k = 0; k < currentValue; k++) {
         result.push(previousIteration[l].concat(k))
       }
     }
@@ -25,4 +21,4 @@ function indicesPermutations (previousValue, currentValue, currentIndex, array) 
   return result
 }
 
-module.exports = indicesPermutations
+module.exports = exports.default = indicesPermutations
